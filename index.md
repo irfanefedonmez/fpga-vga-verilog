@@ -5,13 +5,12 @@ tags: fpga vga verilog
 categories: demo
 ---
 
-Add a short welcome message or introduction here. Aim to get the viewer interested in what follows! Guideline: 1 or 2 sentences. 
-
+The aim of this project was use Verilog and a Basys 3 Development board to generate graphics ona a VGA monitor. I started with the ColoursStripes template code. I made changes with the code and I learned how it works. After that I added a French, Italian, German and Jamaican flags. I added a 2 switches to change between them. This project helped me understand how vga graphics and pixel coordinates work.
 I am adding a test sentence here at 13:24 on 03/12/24.
 
 ## **Template VGA Design**
 ### **Project Set-Up**
-Summarise the project set-up and design flow. Include a screenshot of your own set-up, for example see the image of my Project Summary window below. Guideline 1 short paragraph.
+I used Vivado to develop the code for my board. My project uses row and column coordinates to determine and change the each pixel on the VGA monitor. The RGB outputs control the each pixel. I used SW0 as the rset switch, SW1 and SW2 to change between flags.
 
 <img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSum.png">
 ### **Template Code**
