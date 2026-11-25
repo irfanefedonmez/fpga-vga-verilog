@@ -1,3 +1,4 @@
+
 ---
 layout: home
 title: FPGA VGA Driver Project
@@ -12,11 +13,14 @@ I am adding a test sentence here at 13:24 on 03/12/24.
 ### **Project Set-Up**
 I used Vivado to develop the code for my board. My project uses row and column coordinates to determine and change the each pixel on the VGA monitor. The RGB outputs control the each pixel. I used SW0 as the rset switch, SW1 and SW2 to change between flags.
 
-<img src="https://raw.githubusercontent.com/melgineer/fpga-vga-verilog/main/docs/assets/images/VGAPrjSum.png">
+<img width="1204" height="600" alt="Screenshot 2026-11-25 164102" src="https://github.com/user-attachments/assets/ccdd2eee-98f5-4b2a-923c-45497cbae14a" />
+
 ### **Template Code**
-Outline the structure and design of the Verilog code templates you were given. What do they do? Include reference to how a VGA interface works. Guideline: 2/3 short paragraphs, consider including screenshot(s).
+The original ColourStripes template displays eight vertical colour stripes on a vga monitor. It uses pixel coordinates and RGB values to control the colours. The VGA synchronisation signals control the display of the image on the screen.
+<img width="1204" height="600" alt="Screenshot 2026-11-25 164102" src="https://github.com/user-attachments/assets/c40d138c-aa2b-4a81-9303-feb61dfa5d26" />
 ### **Simulation**
-Explain the simulation process. Reference any important details, include a well-selected screenshot of the simulation. Guideline: 1/2 short paragraphs.
+I used Vivado Behavioral Simulation to observe the RGB outputs, pixel coordinates and VGA synchronisation signals. The initial simulation showed undefined values because the input signals were not driven. A testbench is needed to provide the clock, reset and switch values to test the design properly.
+<img width="1062" height="680" alt="image" src="https://github.com/user-attachments/assets/aa735dfe-38dd-4a0a-ad9a-cc22ad02e4ea" />
 ### **Synthesis**
 Describe the synthesis and implementation processes. Consider including 1/2 useful screenshot(s). Guideline: 1/2 short paragraphs.
 ### **Demonstration**
